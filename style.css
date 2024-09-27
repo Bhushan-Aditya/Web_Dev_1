@@ -1,0 +1,81 @@
+:root {
+    --main-bg-color: rgba(0, 0, 0, 0.5);
+    --border-color: #ccc;
+    --button-bg-color: #4CAF50;
+    --text-color: white;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-image: url("crypto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.budget-section,
+.input-section,
+.expenses-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+button {
+    background-color: var(--button-bg-color);
+    border: none;
+    color: var(--text-color);
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s ease;
+}
+
+#expenses-list {
+    list-style: none;
+    padding: 0;
+}
+
+#expenses-list li {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #eee;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    button {
+        width: 100%;
+    }
+}
